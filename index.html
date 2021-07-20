@@ -2,94 +2,173 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1,
-  maximum-scale=5"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
 
     <link rel="icon" href="devchallenges.png" />
 
-    <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="https://devchallenges.io/"
-    />
+    <title>404</title>
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
-
-    <title>Devchallenges</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Montserrat:wght@400;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 
     <style>
+      html, body {
+        min-height: 100vh;
+      }
+
       body {
-        font-family: "Poppins", sans-serif;
+        font-family: 'Space Mono', monospace;
+        color: #333333;
+        font-size: 14px;
+        padding: 0;
+        margin: 0;
       }
 
-      ul {
-        padding-left: 24px;
+      .btn.btn-black {
+        width: 216px;
+        height: 68px;
+        display: inline-block;
+        text-decoration: none;
+        background: #333333;
+        font-weight: bold;
+        line-height: 68px;
+        text-align: center;
+        letter-spacing: -0.035em;
+        text-transform: uppercase;
+        color: #FFFFFF;
       }
 
-      li {
-        margin-bottom: 8px;
+      .content-wrapper {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        box-sizing: border-box;
       }
 
-      .welcome {
-        max-width: 800px;
-        margin: 0 auto;
+      header h1 {
+        font-family: 'Inconsolata';
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 25px;
+        letter-spacing: -0.08em;
+        text-transform: uppercase;
       }
 
-      .welcome-text {
-        margin-top: 30vh;
-        font-weight: 500;
+
+      .content {
+        text-align: center;
+        flex: 1;
       }
 
-      .welcome-text p {
-        font-size: 1rem;
-        font-weight: 400;
+      .content {
+        text-align: left;
       }
 
-      .welcome-text h1 {
-        font-size: 1.5rem;
+      .content img {
+        max-width: 100%;
+        height: auto;
       }
 
-      .welcome-text a {
-        color: #f7542e;
+      .content h2 {
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 71px;
+        letter-spacing: -0.035em;
+        margin: 0 0 35px 0;
+        padding: 0;
+      }
+
+      .content p {
+        color: #4F4F4F;
+        font-size: 18px;
+        margin: 0 0 65px 0;
+        padding: 0;
+      }
+
+      footer {
+        font-family: 'Montserrat';
+        line-height: 17px;
+        text-align: center;
+        color: #BDBDBD;
+      }
+
+      footer a {
+        color: #BDBDBD;
+        font-weight: bold;
+      }
+
+      @media (min-width: 576px) {
+
+      }
+
+      /* Medium devices (tablets, 768px and up) */
+      @media (min-width: 768px) {
+
+      }
+
+      /* Large devices (desktops, 992px and up) */
+      @media (min-width: 992px) {
+        .content-wrapper {
+          padding: 40px 70px 25px;
+        }
+        .content {
+          text-align: left;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          align-content: center;
+          justify-content: center;
+          align-items: center;
+        }
+
+
+        .content img {
+          margin: 0 20px 0 0;
+        }
+
+        .content h2 {
+          width: 586px;
+          font-size: 64px;
+          line-height: 95px;
+        }
+
+        .content p {
+          width: 400px;
+          font-size: 24px;
+        }
+      }
+
+      /* X-Large devices (large desktops, 1200px and up) */
+      @media (min-width: 1200px) {
+        .content img {
+          margin: 0 50px 0 0;
+        }
+      }
+
+      /* XX-Large devices (larger desktops, 1400px and up) */
+      @media (min-width: 1400px) {
+        .content img {
+          margin: 0 115px 0 0;
+        }
       }
     </style>
   </head>
   <body>
-    <div class="welcome">
-      <div class="welcome-text">
-        <h1>
-          Welcome to
-          <a href="https://devchallenges.io/" target="_blank"
-            >devchallenges.io</a
-          >
-        </h1>
-
-        <p>
-          If you have any questions, don't hesitate to ask on Discord. Here are
-          7 general steps to complete the challenge:
-        </p>
+    <div class="content-wrapper">
+      <header>
+        <h1>404 not found</h1>
+      </header>
+      <div class="content">
+        <img src="./Scarecrow.png" alt="Scarecrow" width="539" height="447">
+        <div>
+          <h2>I have bad news for you</h2>
+          <p>The page you are looking for might be removed or is temporarily unavailable</p>
+          <a class="btn btn-black" href="#">Back to homepage</a>
+        </div>
       </div>
-
-      <ul>
-        <li><b>Step 1:</b> Create a new repository on github</li>
-        <li><b>Step 2:</b> Copy resources, README.md to your repository</li>
-        <li>
-          <b>Step 3:</b> Login to Figma to checkout font, color, spacing,..
-        </li>
-        <li><b>Step 4:</b> Complete all user stories</li>
-        <li><b>Step 5:</b> Update README.md</li>
-        <li><b>Step 6:</b> Deploy your app and submit your solution</li>
-        <li>
-          <b>Step 7:</b> Share your solution on Discord, Twitter and other
-          platforms to ask for feedback
-        </li>
-      </ul>
+      <footer>created by <a href="#">sergma33</a> - devChallenges.io</footer>
     </div>
   </body>
 </html>
